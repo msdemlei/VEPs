@@ -2,94 +2,94 @@ Vocabulary: http://www.ivoa.net/rdf/datalink/core
 Author: francois.bonnarel@astro.unistra.fr
 Date: 2019-10-15
 
-New Term: Associated-DataSet
+New Term: associated-dataset
 Action: Addition
 Label: Dataset associated to the main item.
 Description: The dataset  pointed by the link is considered associated to the main discovered item.   
 Rationale: 
 This new branch is proposed to accomodate a description of the dataproduct-type pointed by the link target.  Associated data to a catalog or a row in a catalog (eg a source or detection) is the main use case.  Additional terms will be added in the branch for each specific reelevant dataproduct_type in Obscore. At the time of writing the list of available dataproduct type is the following : image, cube, spectrum, sed, timeseries, visibility, event, measurements.
 
-New Term: Associated-image
+New Term: associated-image
 Action: Addition
 Label: Image associated to the main item.
 Description: The 2D image  pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is an image as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-cube
+New Term: associated-cube
 Action: Addition
 Label: Cube associated to the main item.
 Description: The data cube  pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a cube as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-spectrum
+New Term: associated-spectrum
 Action: Addition
 Label: Spectrum associated to the main item.
 Description: The spectrum  pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a spectrum as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-sed
+New Term: associated-sed
 Action: Addition
 Label: Sed associated to the main item.
 Description: The sed pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a sed as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-visibility
+New Term: associated-visibility
 Action: Addition
 Label: Visibility data associated to the main item.
 Description: The interferometric Visibility dataset pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a visibility as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-event
+New Term: associated-event
 Action: Addition
 Label: Event list associated to the main item.
 Description: The event list pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataSet)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is an event as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-measurements
+New Term: associated-measurements
 Action: Addition
 Label: Measurement catalogue associated to the main item.
 Description: The measurements catalogue pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a measueremnts as defined in the ObsCore 1.1 specification, section 3.3.1
 
-New Term: Associated-timeseries
+New Term: associated-timeseries
 Action: Addition
 Label: Timeseries associated to the main item.
 Description: The timeseries pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-DataSet)
+Relationships: rdfs:subPropertyOf(associated-dataset)
 Rationale: 
 This new term specifies that the current Associated-Dataset to the main item is a timeseries as defined in the ObsCore 1.1 specification, section 3.3.1 
 
-New Term: Associated-lightcurve
+New Term: associated-lightcurve
 Action: Addition
 Label: Lightcurve associated to the main item.
 Description: The lightcurve pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-timeseries)
+Relationships: rdfs:subPropertyOf(associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a lightcurve. Lightcurve is a TimeSeries where the  dependant axis is any kind of photometric measurement (flux, magnitude, relative flux, detector counts, etc...). In the future lightcurve could be consistent with reserved terms for the Obscore dataproduct_subtype attribute 
 
-New Term: Associated-timeseries-spectrum
+New Term: associated-timeseries-spectrum
 Action: Addition
 Label: Timeseries of spectra associated to the main item.
 Description: The timeseries of spectra pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-timeseries)
+Relationships: rdfs:subPropertyOf(associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a timeseries of spectra as defined by  the "spêctrum"  value  as defined in the ObsCore 1.1 specification, section 3.3.1.
 
-New Term: Associated-timeseries-image
+New Term: associated-timeseries-image
 Action: Addition
 Label: Timeseries of images associated to the main item.
 Description: The timeseries of images pointed by the link is considered associated to the main discovered item.   
@@ -97,20 +97,20 @@ Relationships: rdfs:subPropertyOf(Associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a timeseries of images as defined by  the "image"  value  as defined in the ObsCore 1.1 specification, section 3.3.1.
 
-New Term: Associated-timeseries-radialvelocities
+New Term: associated-radialvelocitycurve
 Action: Addition
 Label: timeseries of radialvelocities associated to the main item.
 Description: The timeseries of radial velocities pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-timeseries)
+Relationships: rdfs:subPropertyOf(associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a timeseries of radial velocities. In such a  TimeSeries  the  dependant axis is any kind of absolute or relative radial velocity. In the future timeseries of radial velocities could be consistent with reserved terms for the Obscore dataproduct_subtype attribute 
 
 
-New Term: Associated-timeseries-cube
+New Term: associated-timeseries-cube
 Action: Addition
 Label: Timeseries of cubes associated to the main item.
 Description: The timeseries of cubes pointed by the link is considered associated to the main discovered item.   
-Relationships: rdfs:subPropertyOf(Associated-timeseries)
+Relationships: rdfs:subPropertyOf(associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a timeseries of cubes as defined by  the "cube"  value  as defined in the ObsCore 1.1 specification, section 3.3.1.
 
