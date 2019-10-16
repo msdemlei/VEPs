@@ -2,7 +2,7 @@ Vocabulary: http://www.ivoa.net/rdf/datalink/core
 Author: francois.bonnarel@astro.unistra.fr
 Date: 2019-10-15
 
-New Term: DataDocumentation 
+New Term: datadocumentation 
 Action: Addition
 Label: Documentation associated to the main item 
 Description:   This  is text is proposed to link documentation text to the data in a format defined via the "contentType" field   
