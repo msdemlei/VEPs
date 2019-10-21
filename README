@@ -1,0 +1,9 @@
+This is the recommended place to work on Vocabulary Enhancement
+Proposals (VEPs) as per Vocabularies 2.0.
+
+Please call files in here vep-nnnn.txt.  The current running number can
+be seen at
+https://wiki.ivoa.net/twiki/bin/view/IVOA/WebHome?topic=VEPs.  Please
+update the running number there immediately after claiming a number
+here.  Once your VEP is ready, link it from that page.
+
