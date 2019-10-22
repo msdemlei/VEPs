@@ -19,4 +19,6 @@ SVO wanted to use the term to link to related publications,
 CADC mentioned there's a simiar thing in CAOM that is used to link to
 pocessing logs.  Semantics then asked whether there is sufficent
 communalities between the different use cases to have them all under one
-term and what a client is supposed to do with it.
+term and what a client is supposed to do with it; SVO indicated that
+there probably was and the single "documentation" was sufficient
+(http://mail.ivoa.net/pipermail/dal/2019-October/008208.html)
