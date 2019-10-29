@@ -15,7 +15,9 @@ Discussion: Semantics took the liberty of modifying term, label and
 description versus the original proposal to better fit into the existing
 vocabulary and be a bit more precise.
 
-SVO wanted to use the term to link to related publications,
+SVO wantes to use the term to link to related publications, for instance
+where the dataset was used or commented on (cf.
+http://svo2.cab.inta-csic.es/vocats/v2/ltsa/dl.php?ID=SDSS_J12181286%2B0706104).
 CADC mentioned there's a simiar thing in CAOM that is used to link to
 pocessing logs.  Semantics then asked whether there is sufficent
 communalities between the different use cases to have them all under one
