@@ -1,0 +1,18 @@
+To start a new VEP, say "svn copy template.txt VEP-nnn.txt", delete this
+preamble and start filling out the fields.  More information on what
+goes where is available from the IVOA specification "Vocabularies in the
+VO", version 2 (see http://ivoa.net/documents).
+
+Vocabulary:
+Author: 
+Date:
+
+New Term:
+Action: Addition
+Label:
+Description:
+Relationships: 
+Used-in:
+
+Rationale: 
+
