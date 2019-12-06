@@ -1,3 +1,4 @@
+Superceded-by: VEP-003
 Vocabulary: http://www.ivoa.net/rdf/datalink/core
 Author: francois.bonnarel@astro.unistra.fr
 Date: 2019-10-15
@@ -114,3 +115,20 @@ Relationships: rdfs:subPropertyOf(associated-timeseries)
 Rationale: 
 This new term specifies that the current Associated-timeseries to the main item is a timeseries of cubes as defined by  the "cube"  value  as defined in the ObsCore 1.1 specification, section 3.3.1.
 
+
+Discussion: This proposal was discussed mainly on the DAL list, also in
+the context of ongoing updates to the datalink standard itself.  In
+http://mail.ivoa.net/pipermail/dal/2019-October/008206.html concern was
+brought forth that the VEPs contains a large number of terms that may
+never been used.  Also, if we actually wanted to solve the problem
+tackled here (letting clients figure out where to send the data product
+linked), we would have about as many terms in several other branches of
+the datalink vocabulary
+(http://mail.ivoa.net/pipermail/dal/2019-October/008211.html).  Finally,
+in http://mail.ivoa.net/pipermail/dal/2019-November/008224.html, it was
+pointed out that the term "associated-data" is somewhat unfortunate, as
+data products not "associated" in some way probably would not be within
+a datalink document in the first place.
+
+It was therefore decided to abandon this VEP and supercede it with
+VEP-003.
