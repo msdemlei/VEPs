@@ -1,5 +1,5 @@
 Vocabulary: http://ivoa.net/rdf/datalink/core
-Author: François Bonnarel, Markus Demleitner
+Author: François Bonnarel, Markus Demleitner, msdemlei@ari.uni-heidelberg.de
 Date: 2019-12-06
 Supercedes: VEP-001
 
