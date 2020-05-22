@@ -30,3 +30,31 @@ Rationale:
   Clients should offer #sibling links in a context of scientific
   exploitation of the dataset (as opposed to, say, debugging).
 
+Discussion:
+  In the discussion, it was the need for the concept as such ("other
+  things that were produced from the observations that led up to #this")
+  was not disputed, though the discussion was somewhat delayed by
+  an investigation of possible shortcomings in the datalink data model
+  (http://mail.ivoa.net/pipermail/dal/2019-December/008248.html) and
+  whether additional cases should or should not be included in it
+  (http://mail.ivoa.net/pipermail/dal/2020-February/008262.html).
+  
+  However, the main points of contention were the choice of the term and
+  label ("sibling").  Objections included that astronomers might not
+  understand the provenance-inspired nomenclature, that a very rough
+  view of provenance must be adopted to actually talk about siblings
+  (because, really, #this and the #sibling items just share common
+  ancestors, not (necessarily) the parents), or that it is confusing to
+  define, say, a spectrum to be the sibling of a catalogue row
+  (http://mail.ivoa.net/pipermail/semantics/2020-May/002700.html).
+
+  Possible alternatives investigated include #see-also (which was
+  rejected as being too general), #co-generated (which was disliked
+  because the implication that the two artefacts were built at the same
+  time by the same processing step is even stronger than with #sibling),
+  and #coderived (which wide acceptance but was strongly rejected by one
+  party arguing it would strongly distort the meaning of "derived".
+
+  In the end, #sibling was accepted as being acceptable and in use after
+  a splinter discussion during the May 2020 Virtual Interop.
+
