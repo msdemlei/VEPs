@@ -1,0 +1,46 @@
+Vocabulary:http://ivoa.net/rdf/datalink/core
+Author: François Bonnarel
+Date: 2020-06-03
+Supercedes: VEP-001
+
+New Term: counterpart
+Action: Addition
+Label: Counterpart
+Description: 
+  Data products sharing the target of the experiment or observation
+  that led to #this but of unrelated provenance.  This could be
+  observations of the same object in different wavelengths or along
+  different axes (time, spectrum), but spectra of dust of common
+  origin but different laboratories would be #counterparts as well.
+
+Used-in:
+     Various SVO ConeSearch services (Cortesy Carlos Rodrigo/SVO)
+
+      In the CATlib spectral library 
+      (http://svo2.cab.inta-csic.es/vocats/v2/catlib/):
+      http://svo2.cab.inta-csic.es/vocats/v2/catlib/dl.php?ID=BD-+01+2582
+
+      In the MILES spectral library 
+      (http://svo2.cab.inta-csic.es/vocats/v3/miles/):
+      http://svo2.cab.inta-csic.es/vocats/v3/miles/dl.php?ID=HD102634
+
+Rationale:
+    Astronomers often want to associate #this (astronomical objects,
+    sources or datasets ) with dataproducts of other provenance (but
+    sharing some common features with  them). The purpose maybe for
+    comparison, cross-corelation, multi-band interpration, follow-up of
+    changes, checking simulations results versus observations.
+
+    Examples of that are measurements in another band, images, cubes,
+    spectra, timeseries of a source, same dataproduct type and location
+    in physical space but at another time, etc.
+
+    In discussions leading up to the VEP, several other terms have been 
+    investigated and found inadequate.  #see-also was considered much 
+    too general, essentially applying to all datalink items; #followup did
+    not match the intended concept, as the linked data products may be
+    much older than #this; #cross-associated was considered in more
+    detail and might be a contender; #is-observation-of did not quite
+    fit because the #counterpart is not an observation of #this but
+    something observed by #this.
+
