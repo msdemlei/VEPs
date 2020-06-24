@@ -1,7 +1,7 @@
 Vocabulary: http://ivoa.net/rdf/datalink/core
 Author: François Bonnarel, Markus Demleitner, msdemlei@ari.uni-heidelberg.de
 Date: 2019-12-06
-Supercedes: VEP-001
+Superceded-by: VEP-004
 
 New Term: sibling
 Action: Addition
@@ -55,6 +55,11 @@ Discussion:
   and #coderived (which wide acceptance but was strongly rejected by one
   party arguing it would strongly distort the meaning of "derived".
 
-  In the end, #sibling was accepted as being acceptable and in use after
-  a splinter discussion during the May 2020 Virtual Interop.
+  In the end, #sibling was accepted as being acceptable after
+  a splinter discussion during the May 2020 Virtual Interop, but the
+  term #cogenerated was considered preferable, mainly because it
+  better showed that the concept applies to elements in long
+  provenance trees even if they are only related through distant
+  ancestors.
+
 

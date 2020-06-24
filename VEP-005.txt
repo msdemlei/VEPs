@@ -1,0 +1,40 @@
+Vocabulary: http://ivoa.net/rdf/datalink/core
+Author: François Bonnarel, Markus Demleitner, msdemlei@ari.uni-heidelberg.de
+Date: 2020-06-24
+Supercedes: VEP-003
+
+New Term: coderived
+Action: Addition
+Label: Sibling Data
+Description: Data products sharing one or more progenitors with #this.
+  This could be a lightcure for an object catalog derived from repeated
+  observations, the dataset processed using a different pipeline, or the
+  like.
+Used-in: 
+  http://dc.g-vo.org/gaia/q2/tsdl/dlmeta?ID=ivo://org.gavo.dc/~?gaia/q2/199286482883072/BP
+  This is GAVO's rendition of the Gaia DR2 epoch photometry, where
+  users retrieve a time series in a specific band; the time series
+  in the other bands are the siblings of that.
+
+Rationale: 
+  It is fairly common in complex pipelines that multiple data products
+  result from a single observation.  Often, this is true even in a
+  single pipeline step, and hence the data products are not in a
+  progenitor-derivation relationship.  Still, researchers will want to
+  know about these data products; for instance, while exploring a source
+  in Gaia, a quick way to access epoch photometry or the RP/BP spectra
+  is obviously valuable; such artefacts are not really progenitors of
+  the catalog entry, though.  In such cases, #sibling (or perhaps one of
+  its future child terms) should be used.
+
+  Clients should offer #coderived links in a context of scientific
+  exploitation of the dataset (as opposed to, say, debugging).
+
+  The term #coderived was chosen in a longer process that included
+  consideration of #sibling and #co-generated.  Both were eventually
+  dropped because it was felt they could be interpreted as meaning
+  "Produced together with #this in one processing step"; the concept,
+  however, is that the common predecessor of #coderived and #this can be
+  many levels up the a provenance tree.
+
+Discussion:
