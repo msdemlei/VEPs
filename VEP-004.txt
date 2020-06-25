@@ -14,15 +14,9 @@ Description:
   origin but different laboratories would be #counterparts as well.
 
 Used-in:
-     Various SVO ConeSearch services (Cortesy Carlos Rodrigo/SVO)
-
-      In the CATlib spectral library 
-      (http://svo2.cab.inta-csic.es/vocats/v2/catlib/):
-      http://svo2.cab.inta-csic.es/vocats/v2/catlib/dl.php?ID=BD-+01+2582
-
-      In the MILES spectral library 
-      (http://svo2.cab.inta-csic.es/vocats/v3/miles/):
-      http://svo2.cab.inta-csic.es/vocats/v3/miles/dl.php?ID=HD102634
+   Various SVO ConeSearch services (Cortesy Carlos Rodrigo/SVO), for
+   instance
+   http://svo2.cab.inta-csic.es/vocats/catlib/dl.php?ID=Coma+T+102&from=cs
 
 Rationale:
     Astronomers often want to associate #this (astronomical objects,
