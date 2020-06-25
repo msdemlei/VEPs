@@ -5,16 +5,16 @@ Supercedes: VEP-003
 
 New Term: coderived
 Action: Addition
-Label: Sibling Data
+Label: Coderived Data
 Description: Data products sharing one or more progenitors with #this.
-  This could be a lightcure for an object catalog derived from repeated
+  This could be a lightcurve for an object catalog derived from repeated
   observations, the dataset processed using a different pipeline, or the
   like.
 Used-in: 
   http://dc.g-vo.org/gaia/q2/tsdl/dlmeta?ID=ivo://org.gavo.dc/~?gaia/q2/199286482883072/BP
   This is GAVO's rendition of the Gaia DR2 epoch photometry, where
   users retrieve a time series in a specific band; the time series
-  in the other bands are the siblings of that.
+  in the other bands are coderived with that.
 
 Rationale: 
   It is fairly common in complex pipelines that multiple data products
@@ -24,7 +24,7 @@ Rationale:
   know about these data products; for instance, while exploring a source
   in Gaia, a quick way to access epoch photometry or the RP/BP spectra
   is obviously valuable; such artefacts are not really progenitors of
-  the catalog entry, though.  In such cases, #sibling (or perhaps one of
+  the catalog entry, though.  In such cases, #coderived (or perhaps one of
   its future child terms) should be used.
 
   Clients should offer #coderived links in a context of scientific
@@ -33,8 +33,8 @@ Rationale:
   The term #coderived was chosen in a longer process that included
   consideration of #sibling and #co-generated.  Both were eventually
   dropped because it was felt they could be interpreted as meaning
-  "Produced together with #this in one processing step"; the concept,
-  however, is that the common predecessor of #coderived and #this can be
-  many levels up the a provenance tree.
+  "of the same kind as #this" or "produced together with #this in one
+  processing step"; however, is that the common predecessor of
+  #coderived and #this can be many levels up the a provenance tree.
 
 Discussion:
