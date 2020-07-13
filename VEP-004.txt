@@ -11,10 +11,11 @@ Description:
   that led to #this but of unrelated provenance.  This could be
   observations of the same object in different wavelengths or along
   different axes (time, spectrum), but spectra of dust of common
-  origin but different laboratories would be #counterparts as well.
+  origin but obtained by different laboratories would be #counterparts 
+  as well.
 
 Used-in:
-   Various SVO ConeSearch services (Cortesy Carlos Rodrigo/SVO), for
+   Various SVO ConeSearch services (courtesy Carlos Rodrigo/SVO), for
    instance
    http://svo2.cab.inta-csic.es/vocats/catlib/dl.php?ID=Coma+T+102&from=cs
 
