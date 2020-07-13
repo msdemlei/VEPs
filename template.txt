@@ -3,7 +3,7 @@ preamble and start filling out the fields.  More information on what
 goes where is available from the IVOA specification "Vocabularies in the
 VO", version 2 (see http://ivoa.net/documents).
 
-Vocabulary:
+Vocabulary: http://www.ivoa.net/rdf/
 Author: 
 Date:
 

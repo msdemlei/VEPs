@@ -1,4 +1,4 @@
-Vocabulary:http://ivoa.net/rdf/datalink/core
+Vocabulary: http://www.ivoa.net/rdf/datalink/core
 Author: François Bonnarel
 Date: 2020-06-03
 Supercedes: VEP-001
