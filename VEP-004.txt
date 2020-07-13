@@ -19,6 +19,10 @@ Used-in:
    instance
    http://svo2.cab.inta-csic.es/vocats/catlib/dl.php?ID=Coma+T+102&from=cs
 
+   Also, in the GAVO data center, there it is used to link repeated
+   observations of a given field among each other.  For instance:
+   http://dc.g-vo.org/flare_survey/q/mdl/dlmeta?ID=ivo%3A//org.gavo.dc/%7E%3Fflare_survey/data/plates/ESO040_004362.fits
+
 Rationale:
     Astronomers often want to associate #this (astronomical objects,
     sources or datasets ) with dataproducts of other provenance (but
