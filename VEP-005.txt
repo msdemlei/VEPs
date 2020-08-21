@@ -38,3 +38,5 @@ Rationale:
   #coderived and #this can be many levels up the a provenance tree.
 
 Discussion:
+  After the lively discussions on the VEPs this VEP supercedes, no
+  objections were raised on this.
