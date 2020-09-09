@@ -1,0 +1,25 @@
+Vocabulary: http://www.ivoa.net/rdf/datalink/core
+Author: Markus Demleitner <msdemlei@ari.uni-heidelberg.de>
+Date: 2020-09-09
+
+Term: #calibration
+Action: Modificiation
+Description: An item that can be used to remove instrumental
+  signatures from #this.  Note that the calibration has not been applied
+  to #this yet.  To link items that have already been applied to #this,
+  use #progenitor.
+
+Term: #bias
+Action: Modification
+Description: Estimated detector offset levels in #this.
+
+Term: #dark
+Action: Modification
+Description: Estimated detector dark current in #this.
+
+Term: #flat
+Action: Modification
+Description: An estimated sensitivity map for #this.
+
+Rationale: 
+
