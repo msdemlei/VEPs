@@ -4,22 +4,32 @@ Date: 2020-09-09
 
 Term: #calibration
 Action: Modificiation
-Description: An item that can be used to remove instrumental
-  signatures from #this.  Note that the calibration has not been applied
-  to #this yet.  To link items that have already been applied to #this,
-  use #progenitor.
+Description: Data products that can be used to remove instrumental
+  signatures from #this.  Note that the calibration steps such data
+  products feed have not been applied to #this yet.   To link
+  calibration data already reflected in #this, use #progenitor.
 
 Term: #bias
 Action: Modification
-Description: Estimated detector offset levels in #this.
+Description: Data products that can be used to remove detector offset levels 
+  from #this.
 
 Term: #dark
 Action: Modification
-Description: Estimated detector dark current in #this.
+Description: Data products that can be used to remove detector dark 
+  current from #this.
 
 Term: #flat
 Action: Modification
-Description: An estimated sensitivity map for #this.
+Description: Data products that can be used to remove the signature of
+  non-homogeneous detector sensitivity from #this.
 
 Rationale: 
-
+  In a discussion on the semantics mailing list (see
+  http://mail.ivoa.net/pipermail/semantics/2020-June/002735.html
+  and follow-ups) it was found that the existing descriptions of
+  #calibration and its narrower terms are ambiguous; "resource used
+  to calibrate" could mean both "resource that has been used" or
+  "resource that can be used".  This VEP tries to make it clear that the
+  "has been used" interpretation is for #progenitor, wheras #calibration
+  is for "can be used".
