@@ -35,3 +35,45 @@ Rationale:
   "resource that can be used".  This VEP tries to make it clear that the
   "has been used" interpretation is for #progenitor, wheras #calibration
   is for "can be used".
+
+Discussion:
+  On the Semantics mailing list 
+  (http://mail.ivoa.net/pipermail/semantics/2021-March/002774.html and
+  followups), concerns were brought forward that excluding calibration
+  data already applied would unnecessarily complicate the vocabulary;
+  the temporal aspect ("has been applied" vs. "can be applied") should,
+  if possible, be kept out of it.  Against that it was put forward that
+  doing this would leave parts of #calibration within #progenitor (the
+  "has been applied" part), other parts essentially in what some people
+  suggested is #auxiliary (the "can be applied" part").  This violates
+  the conditions for keeping the concepts organised in a tree, which
+  was considered undesirable.
+
+  On the other hand, it was recognised that being able to trace "science
+  data" (as opposed to auxiliary resources like calibration data)
+  through the provenance chain is valuable.  A method proposed to effect
+  this, given that with VEP-006 #calibration is not available for this,
+  could be to narrow the definition of #progenitor to "less calibrated
+  science data".  But even if this step is not taken and #progenitor
+  remains "anything upstream in the provenance chain", a new term
+  #calibration-applied would seem useful (an example given was: when
+  fusing 50 images, people want to tell those apart from, for instance,
+  a master PSF that also went into the fusion).  Parties having use for
+  such a concept are encouraged to author a VEP for it.
+
+  In the end, after a side meeting at the May 2021 Interop consensus was
+  found that #calibration should certainly not contain elements both in
+  and outside of #progenitor; it was agreed that while, if we started
+  again today, we would call the VEP-006 #calibration something like
+  #calibration-applicable.  However, given the label is there, and that
+  the level of detail below #calibration (with #bias, #dark, and #flat)
+  probably mainly is useful (as far as datalink with its focus on
+  actionable semantics is concerned) when a client wants to
+  semi-automatically perform the calibration itself, it was decided that
+  #calibration is kept with its label changed to "Applicable
+  Calibration" and a corresponding definition.
+
+  As we sharpen the definition of #auxiliary ("resources aiding the
+  scientific exploitation of #this"), #calibration should probably
+  become a child of it.  This, however, would be part of a VEP on
+  #auxiliary.
