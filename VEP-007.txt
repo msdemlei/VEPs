@@ -13,11 +13,11 @@ Relationships: rdfs:subPropertyOf(documentation)
 Used-in: http://voparis-tap-maser.obspm.fr/voyager_pra/epn/dl/dlmeta?ID=VG1-J-PRA-3-RDR-LOWBAND-6SEC-V1.0%3APRA_I.TAB
 
 Rationale:
-In some archives (e.g., NASA/PDS), so-called PDS label files are 
-associated to each product/document of the archive.  In the case of 
-NASA/PDS data products, the label file contains the required metadata 
-for decoding the content of #this.  It can be looked as a detached 
-FITS header, stored separately as a plain text file, next to a data 
-file consisting in a binary stream of bytes.  Clients would use the 
-content type (MIME type) (e.g.: application/x-pds4-label+xml, or 
-text/x-pds3-label) to enable the processing.
+In some formats and archives, the metadata required to decode the 
+content of #this is in a separate file. In the case of NASA/PDS 
+data products, for example, the PDS label file contains the decoding 
+metadata. In some archives, the FITS header may be stored separately 
+as a plain text file, next to a data file consisting of a binary 
+stream of bytes. Clients would use the content type (MIME type) 
+(e.g.: application/x-pds4-label+xml, or text/x-pds3-label) to enable 
+the processing.
