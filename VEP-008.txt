@@ -1,10 +1,15 @@
+ocabulary: http://www.ivoa.net/rdf/product-type
+Authors: Baptiste Cecconi <baptiste.cecconi@obspm.fr>, Yan Grange <grange@astron.nl>
+Date: 2021-06-16
+
 New Term: #dynamic-spectrum
 Action: Addition
 Label: Dynamic Spectrum
 Description: Consecutive spectral measurements through time, 
 organized as a time series of successive spectra of the same 
 target or field of view.
-NB: The EPNcore short name for #dynamic-spectrum is `ds`. 
+
+Relationships: rdfs:subPropertyOf(two-d-array)
 
 Used-in: http://vogate.obs-nancay.fr/tableinfo/nda.epn_core
 Used-in: http://dorotka.ufa.cas.cz/tableinfo/thmsm.epn_core
@@ -18,3 +23,5 @@ a time axis and a spectral axis. Community-specific clients can
 use this term to select adequate plotting style (such as, e.g., 
 the "waterfall" style). In TOPCAT, the corresponding plotting 
 style would be the "spectrogram" option of its "Time Plot" window.
+
+NB: The EPNcore short name for #dynamic-spectrum is `ds`. 
