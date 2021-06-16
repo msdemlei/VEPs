@@ -1,4 +1,4 @@
-ocabulary: http://www.ivoa.net/rdf/product-type
+Vocabulary: http://www.ivoa.net/rdf/product-type
 Authors: Baptiste Cecconi <baptiste.cecconi@obspm.fr>, Yan Grange <grange@astron.nl>
 Date: 2021-06-16
 
