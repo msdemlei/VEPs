@@ -7,8 +7,7 @@ Action: Modificiation
 Label: Applicable Calibration
 Description: Data products that can be used to remove instrumental
   signatures from #this.  Note that the calibration steps such data
-  products feed have not been applied to #this yet.   To link
-  calibration data already reflected in #this, use #progenitor.
+  products feed have not been applied to #this yet.
 Used-in: http://dc.g-vo.org/kapteyn/q/dl/dlmeta?ID=ivo%3A//org.gavo.dc/~%3Fkapteyn/data/fits/POT015_000317.fits
 
 Term: #bias
@@ -77,3 +76,7 @@ Discussion:
   scientific exploitation of #this"), #calibration should probably
   become a child of it.  This, however, would be part of a VEP on
   #auxiliary.
+
+  This VEP recommended originally using #progenitor for labelling
+  calibration already applied.  This was quite severely opposed and
+  hence dropped from the description.
