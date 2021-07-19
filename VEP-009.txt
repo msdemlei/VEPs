@@ -1,0 +1,33 @@
+Vocabulary: http://www.ivoa.net/rdf/datalink-core
+Author: Mireille Louys <mireille.louys@unistra.fr>, François Bonnarel <francois.bonnarel@astro.unistra.fr>
+Date: 2021-07-19
+
+Term: #progenitor
+Action: Modification
+Label: Progenitor
+Description: Pre-existing science data that were used to create this dataset
+
+Used-in: http://archive.eso.org/datalink/links?ID=ivo://eso.org/ID?ADP.2020-06-16T18:05:22.868
+
+
+Rationale: The modification involves only the term description. Previous
+definition was "data resources that were used to create this dataset
+(e.g. input raw data)", which was ambiguous, because it could encompass
+any dataset or resource used to produce #this, including calibration
+data. According to usage of terms in the workflow and provenance domain
+the new Description restricts progenitor to the sole less advanced
+science data used to produce #this. By "science data" we mean some
+signal directly obtained from observations or simulations of targeted
+parts of the sky or derived from it.  This is distinguished from
+calibration(-applied) data which allows to transform science data
+measurements in absolute physical units. By distinguishing progenitor
+and calibration(-applied) data we allow to characterize specific roles
+for datasets in the process of production of #this.
+
+The usage example is taken from the ObsCore result
+http://archive.eso.org/tap_obs/sync?REQUEST=doQuery&LANG=ADQL&MAXREC=1&QUERY=SELECT+*+FROM+ivoa.ObsCore+WHERE+obs_publisher_did+%3D+%27ivo%3A%2F%2Feso.org%2FID%3FADP.2020-06-16T18%3A05%3A22.868%27
+
+In this case #this (the record in ObsCore) is an IFS cube. The
+progenitors are KMOS observations
+(https://www.eso.org/sci/facilities/paranal/instruments/kmos.html) as it
+appears in DataLink response.
