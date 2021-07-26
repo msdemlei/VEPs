@@ -13,11 +13,19 @@ Relationships: rdfs:subPropertyOf(documentation)
 Used-in: http://voparis-tap-maser.obspm.fr/voyager_pra/epn/dl/dlmeta?ID=VG1-J-PRA-3-RDR-LOWBAND-6SEC-V1.0%3APRA_I.TAB
 
 Rationale:
-In some formats and archives, the metadata required to decode the 
-content of #this is in a separate file. In the case of NASA/PDS 
-data products, for example, the PDS label file contains the decoding 
-metadata. In some archives, the FITS header may be stored separately 
-as a plain text file, next to a data file consisting of a binary 
-stream of bytes. Clients would use the content type (MIME type) 
-(e.g.: application/x-pds4-label+xml, or text/x-pds3-label) to enable 
-the processing.
+  In some formats and archives, the metadata required to decode the 
+  content of #this is in a separate file. In the case of NASA/PDS 
+  data products, for example, the PDS label file contains the decoding 
+  metadata. In some archives, the FITS header may be stored separately 
+  as a plain text file, next to a data file consisting of a binary 
+  stream of bytes. Clients would use the content type (MIME type) 
+  (e.g.: application/x-pds4-label+xml, or text/x-pds3-label) to enable 
+  the processing.
+
+Discussion:
+  In the thread at 
+  http://mail.ivoa.net/pipermail/semantics/2021-June/002806.html,
+  the proposal was received favourably.  There was a proposal to perhaps
+  add a wider term *#metadata, but given there already is #documentation
+  which probably covers a large part of such a concept already, no
+  immediate need was brought forward.
