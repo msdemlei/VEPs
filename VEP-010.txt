@@ -1,0 +1,37 @@
+Vocabulary: http://www.ivoa.net/rdf/datalink/core
+Author: pdowler.cadc@gmail.com
+Date: 2021-10-13
+
+Term: package
+Action: Addition
+Label: Single download package
+Description: All file-like items related to #this and #this itself
+  packaged together in a single downloadable archive.
+Relationships: 
+Used-in: https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo://cadc.nrc.ca/BLAST?BLASTabell31122006-12-21/REDUCED_250_2009-03-06
+
+Rationale: 
+CADC and ESO have found it useful to distribute packages of
+(essentially) everything they link to in a datalink document, and have
+created a custom term http://www.opencadc.org/caom2#pkg for it.  The use
+case is that for certain types of complex data, in serious scientific
+exploitation it is likely that most files linked to would be useful
+anyway, and hence users should be spared the individual downloads.
+
+This use case has turned out to be stable.  It is thus time to move the
+concept to the datalink core vocabulary.
+
+The provider has some freedom in determining the exact content of the
+package; the downloaded package may include additional files (for
+example, a README).  While the intent is that "everything useful" is
+part of the #package-d archive, there is no strict requirement to really
+include everything; for example, previews may be skipped. 
+
+The format of the package is specified in the content_type field.
+
+The concept bears some relationship to #this; one could argue it is
+#this with bells and whistles.  In a browsing case, it might be useful
+to show #package links together with #this links to immediately indicate
+to users they have the "bells-and-whistles download", too.  We do not
+propose this yet, but suggest a consideration of the idea during VEP
+review.
