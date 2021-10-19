@@ -1,0 +1,22 @@
+Vocabulary: http://www.ivoa.net/rdf/datalink/core
+Author: pdowler.cadc@gmail.com
+Date: 2021-10-18
+
+Term: thumbnail
+Action: Addition
+Label: A small graphical representation
+Description: A very small preview suitable for displaying many at one time
+Relationships: rdfs:subProperyOf(preview)
+Used-in: https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo://cadc.nrc.ca/BLAST?BLASTabell31122006-12-21/REDUCED_250_2009-03-06
+
+Rationale: The term is used to specify that the link target is a small
+preview suitable for displaying many such "thumbnails" at one time. The
+primary use case is for a user interface to load or display these in a
+table or as a popup, usually one per row but a grid of thumbnails might
+be useful as well.
+
+This is used in the CADC AdvancedSearch user interface as a popup when
+users mouse over the preview links and allows the application to load
+many of these at once. Example (BLAST + calibrated image query): 
+
+https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/search/?Observation.collection=BLAST&Plane.calibrationLevel=2
