@@ -2,15 +2,22 @@ Vocabulary: http://www.ivoa.net/rdf/datalink-core
 Author: Baptiste Cecconi <baptiste.cecconi@obspm.fr>
 Date: 2021-06-09
 
-New Term: #detached-header
+Term: #detached-header
 Action: Addition
 Label: Detached Header
 Description: Machine-readable metadata for #this, which in general 
 will be necessary for its scientific use.  Examples include FITS 
 headers distributed without their data blocks or PDS label files. 
-
 Relationships: rdfs:subPropertyOf(documentation)
 Used-in: http://voparis-tap-maser.obspm.fr/voyager_pra/epn/dl/dlmeta?ID=VG1-J-PRA-3-RDR-LOWBAND-6SEC-V1.0%3APRA_I.TAB
+
+Term: #documentation
+Action: Modification
+Description: Structured or unstructured metadata helping to understand, 
+  interpret, or work with #this.  Such information can range from
+  processing logs to weather reports to technical documents on
+  instruments to related publications.
+
 
 Rationale:
   In some formats and archives, the metadata required to decode the 
@@ -22,6 +29,17 @@ Rationale:
   (e.g.: application/x-pds4-label+xml, or text/x-pds3-label) to enable 
   the processing.
 
+  As to the change of the definition of #documentation, is essentially
+  dropping the previous requirement of it being "human readable".  On
+  closer inspection it turned out that humans will always need tools to
+  interpret bitstreams, and hence "human-readability" is not a useful
+  and reproducable criterion to define concepts.  Perhaps at some point
+  we will have to tell apart structured and non-structured metadata so
+  computers can ignore non-structured documents.  As long as detached
+  headers are the only sort of structured metadata computers look for in
+  datalink documents, there does not seem to be sufficient reason for
+  introducing this distinction.
+
 Discussion:
   In the thread at 
   http://mail.ivoa.net/pipermail/semantics/2021-June/002806.html,
@@ -29,3 +47,10 @@ Discussion:
   add a wider term *#metadata, but given there already is #documentation
   which probably covers a large part of such a concept already, no
   immediate need was brought forward.
+
+  On the other hand, the discussion brought up that #documentation
+  explicitly asked for "human-readable text form".  This certainly is
+  not the case for many important sorts of detached headers, and even
+  for FITS headers one can debate this.   In consequence, the VEP was
+  amended to also fix #documentation's definition (cf.
+  http://mail.ivoa.net/pipermail/semantics/2021-September/002846.html).
