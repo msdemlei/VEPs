@@ -54,3 +54,6 @@ Discussion:
   for FITS headers one can debate this.   In consequence, the VEP was
   amended to also fix #documentation's definition (cf.
   http://mail.ivoa.net/pipermail/semantics/2021-September/002846.html).
+
+  The VEP was accepted in the present from at the TCG session of
+  2021-10-27.
