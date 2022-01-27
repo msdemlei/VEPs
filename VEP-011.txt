@@ -20,3 +20,9 @@ users mouse over the preview links and allows the application to load
 many of these at once. Example (BLAST + calibrated image query): 
 
 https://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/search/?Observation.collection=BLAST&Plane.calibrationLevel=2
+
+Discussion:
+  The on-list discussion of this VEP,
+  http://mail.ivoa.net/pipermail/semantics/2021-December/002913.html,
+  brought some clarification of the rationale, but did not uncover a
+  serious need to sharpen the definition.
