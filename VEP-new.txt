@@ -1,0 +1,28 @@
+Vocabulary: http://www.ivoa.net/rdf/messenger
+Author: Markus Demleitner <mademlei@ari.uni-heidelberg.de>
+Date: 2022-02-08
+
+New Term: Massive-Particle
+Action: Addition
+Label: Massive Particle
+Description: A subatomic particle with rest mass or a small accumulation
+  of these (e.g., atoms, ions), but still small enough that quantum
+  effects matter.
+Relationships: Wider than #Neutrino (i.e., #Neutrino will become a child
+  of this once it is accepted).
+Used-in: The registry record of ivo://org.gavo.dc/uhecr/q/cone
+
+Rationale: 
+  The proposed concept tries to include any astrophysical messenger that
+  will reasonably register in radiation detectors but is not a
+  photon.  We want to exclude things like dust, as that in general
+  requires very different techniques in measurement and data use.
+  However, as written here, the concept would presumably include
+  molecules measured in in-situ experiments.  In that sense, a chemical
+  profile of an atmosphere obtained by a planetary probe would use this
+  concept as well as, potentially, and exobiology experiment looking for
+  proteins.  It is not entirely clear to the author whether such
+  messengers – which again require techniques very much different from
+  cosmic ray observatories – should share a concept with the messengers
+  used in astroparticle physics; this should be considered in the
+  discussion of the proposed concept.
