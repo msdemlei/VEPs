@@ -1,18 +1,18 @@
-To start a new VEP, say "svn copy template.txt VEP-nnn.txt", delete this
-preamble and start filling out the fields.  More information on what
-goes where is available from the IVOA specification "Vocabularies in the
-VO", version 2 (see http://ivoa.net/documents).
+For instructions on how to write VEPs, see Vocabularies in the VO 2.1,
+Sects 5.2, and appendix C.2.
 
+[Please remove everything up to and including this line]
 Vocabulary: http://www.ivoa.net/rdf/
-Author: 
-Date:
+Author: [Your Name <email@example.com>]
+Date: [YYYY-MM-DD]
 
-New Term:
-Action: Addition
+New Term: [usually lower case with dashes]
+Action: Addition [or Deprecation, or Modification]
 Label:
 Description:
 Relationships: 
-Used-in:
+Used-in: [This is mandatory -- seriously]
 
 Rationale: 
-
+[Please explain why you need the term and, important!, what consumers
+are supposed to do with it]
