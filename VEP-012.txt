@@ -1,6 +1,7 @@
 Vocabulary: http://www.ivoa.net/rdf/voresource/date_role
 Author: Markus Demleitner <msdemlei@ari.uni-heidelberg.de>
 Date: 2022-03-07
+Superceded-by: VEP-013
 
 New Term: Validated
 Action: Addition
@@ -50,3 +51,7 @@ Discussion:
   be swayed to prefer that, but for now believes the risk of people
   confusing "Valid" and "Validated" is sufficiently low to be taken for
   the benefit of not having camel case identifiers.
+
+  This consideration was found important enough at the Semantics Calls 6
+  telecon on 2022-03-14 to warrant abandoning this VEP and create a new
+  one for #Inspected (VEP-013).

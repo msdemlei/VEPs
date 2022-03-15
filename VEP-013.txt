@@ -6,14 +6,10 @@ Supercedes: VEP-012
 New Term: Inspected
 Action: Addition
 Label: Last Inspected
-Description: Dates with this term in a registry record's
-  curation/date/@role attribute indicate when the resource has last
-  undergone a non-formal inspection that it is still current and
-  applicable.  This will usually involve a human ensuring that the
-  resource still works as expectable, both technically and as regards
-  science content.  The prototypical case is when tutors ensure a
-  written tutorial still describes the real behaviour of clients and
-  services.
+Description: Dates with this role indicate when the resource has last
+  undergone a non-formal inspection, typically by a human, as to whether
+  it is still working as expectable, both technically and as regards
+  science content.
 Relationships: 
 Used-in: The registry record ivo://edu.gavo.org/hd/gavo_addpms (and most
   other IVOA document records; cf.
@@ -21,21 +17,22 @@ Used-in: The registry record ivo://edu.gavo.org/hd/gavo_addpms (and most
 
 Rationale: 
   The prototypical case is for tutorials, where the date of the last
-  inspection as given in the document's registry record is a good
-  indication for the amount of work that might be necessary to use the
-  tutorial in teaching VO technology -- or, in self-study, how many
-  deviations of actual behaviour are to be expected.  The directory of
-  registered texts at http://dc.g-vo.org/VOTT lets users sort the
-  results by this date ("Date Checked").
+  inspection as given in the document's registry record (in
+  curation/date) is a good indication for the amount of work that might
+  be necessary to use the tutorial in teaching VO technology -- or, in
+  self-study, how many deviations of actual behaviour are to be
+  expected.  The directory of registered texts at
+  http://dc.g-vo.org/VOTT lets users sort the results by this date
+  ("Date Checked").
 
   It is conceivable that data centers use this concept for data
   services, too, for instance as part of a certification procedure,
   but the author does not see that as an immediate need.
 
-  This term is not intended for use with vr:validationLevel.  For one, even
-  validation level 4 only applies to the registry record rather than the
-  resource itself, and hence the concept does not apply anyway.  In
-  addition, validationLevel elements are, if at all, added by
+  This term is not intended for use with vr:validationLevel.  For one,
+  even validation level 4 only applies to the registry record rather
+  than the resource itself, and hence the concept does not apply anyway.
+  In addition, validationLevel elements are, if at all, added by
   harvestable full registries which must not modify the records outside
   of the validationLevel elements and hence could not add curation/date
   elements anyway.
@@ -47,7 +44,7 @@ Rationale:
 Discussion:
   This concept was first proposed as #Validated.  During the Semantics
   Calls 6 telecon, it was found that this identifier is too close to the
-  existing #Valid (with an entirely different meaning), and that another
-  identifier would also clearly distance the concept from
+  existing #Valid (with an entirely different meaning), and that a
+  different identifier would also clearly distance the concept from
   vr:validationLevel.  After some consideration, #Inspected seemed to
   suitably convey the intended usage.
