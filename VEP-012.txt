@@ -1,4 +1,4 @@
-Vocabulary: http://www.ivoa.net/rdf/date_role
+Vocabulary: http://www.ivoa.net/rdf/voresource/date_role
 Author: Markus Demleitner <msdemlei@ari.uni-heidelberg.de>
 Date: 2022-03-07
 
