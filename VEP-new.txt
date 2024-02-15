@@ -1,0 +1,25 @@
+Vocabulary: https://www.ivoa.net/rdf/voresource/date_role/
+Author: Markus Demleitner <msdemlei@ari.uni-heidelberg.de>
+Date: 2024-02-15
+
+New Term: ExportRequested
+Action: Addition
+Label: Export Requested
+Description: The date the publisher has requested non-VO bibliographic
+	services to pick up and index the metadata of the resource as per
+	the BibVO note.
+Relationships:
+Used-in: ivo://org.gavo.dc/gaia/s3/pub (or try
+	select ivoid from rr.res_date where value_role='exportrequested'
+	on your favourite RegTAP service)
+
+Rationale:
+	Many resources in the VO Registry should not really be carried in
+	bibliographic services like the ADS; the proper way to credit them is
+	to cite the publications they accompany.  However, where resources do
+	not clearly belong to a (unique) publication, it may be a good idea to
+	encourage researchers to cite the VO resource itself, which means it
+	should be represented in bibliographic services.  Operators can
+	request that representation by obtaining a DOI for their VO resource
+	and setting a date with this role in the VO Registry.  See
+	https://ivoa.net/documents/Notes/BibVO/ for more information.
