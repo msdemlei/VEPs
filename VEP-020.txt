@@ -1,0 +1,30 @@
+Vocabulary: http://www.ivoa.net/rdf/product-type
+Author: Mireille Louys for HEIG IG <mireille.louys@unistra.fr>
+Date: 2025-04-24
+
+New Term: event-bundle
+Action: Addition 
+Label: Event list  with associated calibration files
+Description:  A data product type that agregates an event-list data product
+to other files that describe instrumental response functions for calibration and analysis. 
+This is can be implemented as an archive file or other compressed formats.
+Relationships: is related to the event-list data product type 
+
+Used-in: The distribution of event-list data in multi-messenger astronomy. 
+For example, Chandra primary products distributed via the Chandra
+Data Archive include around half a dozen different types of products neces-
+sary to analyse Chandra data (for example, L2 event-list, Aspect solution,
+bad pixel map, spacecraft ephemeris, V&V Report).
+For VHE gamma rays and neutrinos, the DL3 event-lists should manda-
+torily be associated to their associated IRFs files. The links between the
+event-list and these IRFs should be well defined in the event-bundle.
+
+Rationale:
+Event-list data products distributed by High Energy surveys 
+need additionnal information to be calibrated and analysed. 
+Instrumental and observations functions must be available together 
+with the data in order to interpret the event-list content. 
+
+Reference:
+- IVOA Note Virtual Observatory and High Energy Astrophysics Version 1.0
+https://ivoa.net/documents/Notes/VOHE/20241112/VOHE-Note-draft_1.0.pdf

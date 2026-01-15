@@ -19,6 +19,3 @@ absolute times or periodic time) and a spectral axis. Each temporal and spectral
 time-series. The same type of data layout exists for radar planetary radars, where each time and 
 frequency point is a time-series of the observed pulse echo. The Mars-Express/MARSIS/AIS dataset is 
 an example of such product type (although is it nos -yet- available in an obscore table).
-
-
-  
