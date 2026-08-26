@@ -23,3 +23,10 @@ Rationale:
 	request that representation by obtaining a DOI for their VO resource
 	and setting a date with this role in the VO Registry.  See
 	https://ivoa.net/documents/Notes/BibVO/ for more information.
+
+Discussion:
+	While initially, some doubts were brought forward whether the
+	fundamental mechanism of using date for signalling the desire to
+	publish data, there was no opposition to the concept as such.  When
+	ADS implemented havesting the registry, this VEP was approved by the
+	TCG on 2026-08-24.
