@@ -28,8 +28,15 @@ it's easier to keep this with the VEPs themselves.
 Current VEPs
 ------------
 
+`VEP-018 <//raw.githubusercontent.com/ivoa-std/VEPs/refs/heads/main/VEP-018.txt>`_ Addition of product-type#hyper-dynamic-spectrum
+
+`VEP-019 <//raw.githubusercontent.com/ivoa-std/VEPs/refs/heads/main/VEP-019.txt>`_ Addition of ivoasem#ucd-syntax-code
+
+`VEP-020 <//raw.githubusercontent.com/ivoa-std/VEPs/refs/heads/main/VEP-020.txt>`_ Addition of product-type#event-bundle
+
 Accepted VEPs
 -------------
+
 `VEP-002 <//raw.githubusercontent.com/ivoa-std/VEPs/refs/heads/main/VEP-002.txt>`_ Addition of datalink/core#documentation
 
 `VEP-004 <//raw.githubusercontent.com/ivoa-std/VEPs/refs/heads/main/VEP-004.txt>`_ Addition of datalink/core#counterpart
